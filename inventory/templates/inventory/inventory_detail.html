@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory Detail</title>
+</head>
+<body>
+    <h1>Inventory Detail - {{ inventory.name }}</h1>
+    <ul>
+        <li><strong>Name:</strong> {{ inventory.name }}</li>
+        <li><strong>Description:</strong> {{ inventory.description }}</li>
+        <li><strong>Note:</strong> {{ inventory.note }}</li>
+        <li><strong>Stock:</strong> {{ inventory.stock }}</li>
+        <li><strong>Availability:</strong> {% if inventory.availability %}Available{% else %}Not Available{% endif %}</li>
+        <li><strong>Supplier:</strong> {{ inventory.supplier.name }}</li>
+    </ul>
+</body>
+</html>
