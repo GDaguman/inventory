@@ -5,8 +5,20 @@ This project is an Inventory Management System built with Django, allowing users
 ## Requirements
 
 - Python (3.6 or higher)
-- Django (3.0 or higher)
-- Django Rest Framework (3.0 or higher)
+  Verify if Python is installed by running the following command in your terminal or command prompt:
+  ```bash
+  python --version
+  ```
+  If Python is installed, it will display the version installed. If not, you can download and install Python from [Python's official website](https://www.python.org/downloads/).
+
+- Pip3
+  ```bash
+  python -m pip install --upgrade pip
+  ```
+- Virtualenv
+  ```bash
+  pip install virtualenv
+  ```
 
 ## Project Overview
 
@@ -30,7 +42,7 @@ The `db.sqlite3` file (the SQLite database) is gitignored to prevent versioning 
 
 2. Create a virtual environment.
    ```bash
-   python3 -m venv venv
+   python -m venv venv
    ```
 
 3. Activate the virtual environment.
@@ -67,6 +79,8 @@ Run the development server:
    ```
 
 Access the web interface at `http://localhost:8000/` and explore the different views. The Django admin panel is available at `http://localhost:8000/admin/`.
+
+Navigate to the admin panel to create, update or delete items in the database.
 
 ## API Endpoints
 
