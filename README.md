@@ -82,6 +82,30 @@ Access the web interface at `http://localhost:8000/` and explore the different v
 
 Navigate to the admin panel to create, update or delete items in the database.
 
+## Inventory Management System Models
+
+### Supplier Model
+
+Represents the suppliers associated with the inventory items.
+
+- **Fields**:
+  - **name** (`CharField`): Name of the supplier.
+
+### Inventory Model
+
+Represents the inventory items.
+
+- **Fields**:
+  - **name** (`CharField`): Name of the inventory item.
+  - **description** (`CharField`): Brief description of the inventory item.
+  - **note** (`TextField`): Additional notes or details about the inventory item.
+  - **stock** (`IntegerField`): Quantity or stock count of the inventory item.
+  - **availability** (`BooleanField`): Availability status of the inventory item.
+  - **supplier** (`ForeignKey`): Relationship with the Supplier model.
+
+Each model has a `__str__` method that returns the name of the corresponding item as a string representation.
+
+
 ## API Endpoints
 
 ### Inventory API Endpoints
