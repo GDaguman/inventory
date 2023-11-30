@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    {% include 'includes/navigation.html' %}
     <div class="container mt-5">
         <h1 class="mb-4">Inventory Detail - {{ inventory.name }}</h1>
         <ul class="list-group">
@@ -18,6 +19,7 @@
             <li class="list-group-item"><strong>Supplier:</strong> {{ inventory.supplier.name }}</li>
         </ul>
     </div>
+    {% include 'includes/scripts.html' %}
 
 </body>
 </html>
