@@ -66,13 +66,6 @@ Run the development server:
    python manage.py runserver
    ```
 
-### Running the Application
-
-Run the development server:
-   ```bash
-   python manage.py runserver
-   ```
-
 Access the web interface at `http://localhost:8000/` and explore the different views. The Django admin panel is available at `http://localhost:8000/admin/`.
 
 ## API Endpoints
