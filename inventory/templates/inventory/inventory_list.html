@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Inventory List</title>
-    <!-- Bootstrap CSS CDN link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    {% include 'includes/navigation.html' %}
 
-    <div class="container mt-5">
-        <h1>Inventory List</h1>
-        <table class="table table-bordered">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Name</th>
-                    <th>Supplier</th>
-                    <th>Availability</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for inventory in inventories %}
-                <tr>
-                    <td><a href="{% url 'inventory_detail' inventory.id %}" class="text-decoration-none">{{ inventory.name }}</a></td>
-                    <td>{{ inventory.supplier.name }}</td>
-                    <td>{% if inventory.availability %}<span class="badge badge-success">Available</span>{% else %}<span class="badge badge-danger">Not Available</span>{% endif %}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
-    {% include 'includes/scripts.html' %}
+{% extends 'includes/base.html' %}
 
+{% block content %}
 
-</body>
-</html>
+<h1>Inventory List</h1>
+<table class="table table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Supplier</th>
+            <th>Availability</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for inventory in inventories %}
+        <tr>
+            <td><a href="{% url 'inventory_detail' inventory.id %}" class="text-decoration-none">{{ inventory.name }}</a></td>
+            <td>{{ inventory.supplier.name }}</td>
+            <td>{% if inventory.availability %}<span class="badge badge-success">Available</span>{% else %}<span class="badge badge-danger">Not Available</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
