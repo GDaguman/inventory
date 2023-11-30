@@ -121,7 +121,7 @@ Response:
 
 ##### Example Response with Query Parameter
 
-Request: `/api/inventory/?name=Item1`
+Request: `/api/inventory/?name=Item 1`
 
 Response:
 ```json
