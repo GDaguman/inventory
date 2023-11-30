@@ -82,7 +82,7 @@ Access the web interface at `http://localhost:8000/` and explore the different v
 
 Navigate to the admin panel to create, update or delete items in the database.
 
-## Inventory Management System Models
+## Models
 
 ### Supplier Model
 
