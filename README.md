@@ -34,9 +34,14 @@ The `db.sqlite3` file (the SQLite database) is gitignored to prevent versioning 
    ```
 
 3. Activate the virtual environment.
-   ```bash
-   source venv/bin/activate
-   ```
+   - macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+   - Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
 
 4. Install dependencies from `requirements.txt`.
    ```bash
@@ -47,6 +52,18 @@ The `db.sqlite3` file (the SQLite database) is gitignored to prevent versioning 
    ```bash
    python manage.py makemigrations
    python manage.py migrate
+   ```
+
+6. Create a superuser to manage the database.
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+### Running the Application
+
+Run the development server:
+   ```bash
+   python manage.py runserver
    ```
 
 ### Running the Application
