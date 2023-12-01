@@ -29,9 +29,9 @@ The project includes the following main components:
 
 The `db.sqlite3` file (the SQLite database) is gitignored to prevent versioning of the database.
 
-## Environment Setup
+## Project Setup
 
-### Setting up the Environment
+### Setting up the Project
 
 #### macOS and Linux
 
