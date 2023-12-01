@@ -33,8 +33,6 @@ The `db.sqlite3` file (the SQLite database) is gitignored to prevent versioning 
 
 ### Setting up the Project
 
-#### macOS and Linux
-
 1. Clone the repository.
    ```bash
    git clone https://github.com/gydox/django-ims.git
